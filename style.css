@@ -1,0 +1,188 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background: linear-gradient(135deg,#1d3557,#457b9d);
+    color:white;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:600;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-weight:400;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffd166;
+}
+
+/* Sections */
+section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+/* Home Section */
+#home h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+#home p{
+    font-size:18px;
+    max-width:600px;
+    margin:0 auto 30px;
+}
+
+#home img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    border:6px solid white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    transition:0.4s;
+}
+
+#home img:hover{
+    transform:scale(1.05);
+}
+
+/* About */
+#about{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius:15px;
+    margin:30px 8%;
+}
+
+/* Skills */
+#skills ul{
+    list-style:none;
+    margin-top:30px;
+}
+
+#skills li{
+    display:inline-block;
+    padding:12px 25px;
+    margin:10px;
+    background:#ffd166;
+    color:#333;
+    border-radius:30px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+#skills li:hover{
+    transform:translateY(-5px);
+    background:white;
+}
+
+/* Projects */
+#work article{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    margin:25px auto;
+    padding:25px;
+    border-radius:15px;
+    width:70%;
+    transition:0.3s;
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+
+#work article:hover{
+    transform:translateY(-8px);
+}
+
+/* Contact */
+form{
+    margin-top:20px;
+}
+
+form input,
+form textarea{
+    width:60%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+
+form textarea{
+    height:100px;
+}
+
+form button{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:#ffd166;
+    color:#333;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+form button:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.3);
+}
+
+footer img{
+    width:35px;
+    margin:0 10px;
+    transition:0.3s;
+}
+
+footer img:hover{
+    transform:scale(1.2);
+}
+
+/* Responsive */
+@media(max-width:768px){
+    #work article,
+    form input,
+    form textarea{
+        width:90%;
+    }
+
+    #home h1{
+        font-size:35px;
+    }
+}
